@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Antic+Slab&family=Bad+Script&family=Cookie&family=Courgette&family=Dancing+Script:wght@600&family=Great+Vibes&family=Krub&family=Laila&family=M+PLUS+1p&family=Michroma&family=Montserrat&family=PT+Sans+Caption&family=Playball&family=Poiret+One&family=Quicksand&family=Quintessential&family=Reem+Kufi:wght@700&family=Rochester&family=Skranji&family=Telex&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+header {
+    width: 100%;    
+}
+
+header nav{
+    width: 100%;
+    max-width: 100%;
+    margin:0;
+    background-color: #003b37;
+    display: flex;
+}
+
+.menu{
+    display: none;
+}
+
+header nav .logo img {
+    width: 17%;
+    display:flex;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 120%;
+    letter-spacing: 5px;
+}
+
+header nav ul li span {
+    margin-right: 10px;
+}
+
+header nav ul li a:hover {
+    color: skyblue;
+    text-decoration: overline;
+}
+
+@media screen and (max-width:800px) {
+    header nav {
+        width: 70%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(240, 248, 255, 0.37);
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+        background-color: #003b37;
+    }
+
+    header nav .logo img {
+        display: none;
+    }
+
+    .menu .botmenu {
+        display: block;
+        padding: 20px;
+        color: aliceblue;
+        text-decoration: none;
+        font-family: 'Poiret One', cursive;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 150%;
+        letter-spacing: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu span {
+        float: right;
+        font-size: 30px;
+
+    }
+
+
+
+}footer{ 
+    min-height: 0;
+    font-family: 'Poiret One', cursive;
+    background-color: rgb(0, 59, 55);
+    text-align:left;
+    font-size: 20px;
+    padding: 7px;
+    border-spacing: 3px;
+    color: antiquewhite;
+    bottom: 0;
+}
+
+footer p {
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.redes{
+    font-size: 30px;
+    letter-spacing: 40px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.redes a{
+    color: skyblue;
+    float: left;
+    align-items: center;
+    position:relative;
+    bottom: 30px;
+    
+}
+
+.redes a:hover {
+    color: aliceblue;
+}
