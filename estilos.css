@@ -7,12 +7,12 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-color: rgb(0, 59, 55);
 }
 
 header {
     width: 100%;    
-    
+    height: calc (100vh - 80px);
 }
 
 header nav{
@@ -28,7 +28,6 @@ header nav{
 }
 
 .logo h1 {
-    padding: 20px;
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
     font-weight: 600;
@@ -41,7 +40,7 @@ header nav{
 }
 
 header nav ul {
-    overflow: hidden;
+    overflow:hidden;
     list-style: none;
     padding: 10px;
 }
@@ -70,12 +69,46 @@ header nav ul li a:hover {
     text-decoration: overline;
 }
 
+.logo img {
+    width: 80px;
+    padding-left: 10px;
+    
+}
+
 main {
-    height: 100vh ;
+    height: 100vh;
     background-image: url(./img/montevideo-3603950.jpg);
     background-size: cover;
     background-position: center;
-    
+    padding-top: 30px;
+}
+
+.sec2 h2 {
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: bolder; color: whitesmoke;
+    text-shadow: 3px 3px 2px black;
+
+}
+
+.sec2 {
+    height: 100%;
+    width: auto;
+    margin-top: 50px;
+    font-family: 'Poiret One', cursive;
+    background-color:rgba(21, 59, 90, 0.733);
+    font-size: 20px;
+    text-align: center;
+}
+
+.sec2 p {
+    font-weight: bolder; color: rgb(224, 221, 216);
+    text-shadow: 2px 2px 2px black;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .somos {
@@ -85,14 +118,13 @@ main {
     justify-content: center;
     color: rgb(255, 255, 255);
     font-family: 'Poiret One', cursive;
-    text-transform: uppercase;
     font-size: 17px;
     text-align: center;
     padding: 2%;
     background-color: #00000077;
     text-align: center;
     margin-left: 37%;
-    
+    letter-spacing: 1px;
 }
 
 .somos a {
@@ -101,7 +133,8 @@ main {
     padding: 4%;
     padding-top: 2%;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .servicios{
@@ -176,24 +209,110 @@ h3 {
     letter-spacing: 1px;
 }
 
+h5 {
+    font-family: 'Poiret One', cursive;
+    padding-top: 15px;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
 
+}
 
+.faq {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 40px; 
+    padding-top: 17px;
+    font-weight: bold;
+    display: block;
+    
+}
 
+.sec1{
+    background-color: rgba(0, 59, 55, 0.808); 
+    height: auto;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold; color: hsl(0, 0%, 94%);
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
 
+h4 {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgba(3, 36, 34, 0.897); 
+    padding-top: 15px;
+    
+}
 
+fieldset {
+    display: block;
+    background-color: rgba(2, 26, 36, 0.801);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style:none;
+    align-content: flex-start;
+    
 
+}
 
+legend {
+    font-size: 25px;
+    font-weight: bold; color: hsl(175, 29%, 85%);
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    
+}
 
+form {
+    font-family: 'Poiret One', cursive;
+    margin-left: 10%;
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 20px; 
+    font-weight: bolder;color:rgb(57, 156, 255);
+    text-shadow: 2px 2px 2px black;
+}
 
+.ubicanos{
+    position: absolute;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    margin-right: 10%;
+    margin-left: 55%;
+    margin-top: 40px;
+    font-weight: bolder;color: rgb(223, 224, 224);
+    text-shadow: 2px 2px 2px rgb(20, 20, 20);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    letter-spacing: 1px;
+}
 
-
-
-
-
-
+.mapa img{
+    position: absolute;
+    padding-left: 60%;
+    padding-top: 11%;
+    padding-right: 70px;    
+    
+}
 
 
 footer { 
+    width: 100%;
     height: 80px;
     font-family: 'Poiret One', cursive;
     background-color: rgb(0, 59, 55);
@@ -228,41 +347,36 @@ footer p {
     color: aliceblue;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px ) {
     header nav {
-        width: 70%;
+        width: 50%;
         height: 100%;
         left: -100%;
-        margin: 0;
         position: fixed;
     }
 
     header nav ul li {
         display: block;
         float: none;
-        border-bottom: 1px solid rgba(240, 248, 255, 0.37);
+        border-bottom: 1px solid rgba(240, 248, 255, 0.4);
     }
 
     .menu {
-        display: block;
-        width: 100%;
+        display:block;
+        width:100%;
         background-color: rgb(0, 59, 55);
     }
 
-    header nav .logo{
-        display: none;
-    }
-
     .menu .botmenu {
-        display: block;
-        padding: 10px;
-        font-size: 20px;
-        padding: 22px;
+        display:block;
+        padding:10px;
+        margin-bottom: 7px;
+        font-size:20px;
+        padding:22px;
         text-decoration: none;
         font-family: 'Poiret One', cursive;
         text-transform: uppercase;
         font-weight: 600;
-        letter-spacing: 2px;
         color: aliceblue;
         font-weight: 600;
         -webkit-box-sizing: border-box;
@@ -272,16 +386,42 @@ footer p {
 
     .menu span {
         float: right;
-        font-size: 15px;
+        font-size: 20px;
+
+    }
+    
+    .sec2 {
+        height: 100%;
+        width: auto;
+        font-family: 'Poiret One', cursive;
+        background-color:rgba(21, 59, 90, 0.733);
+        font-size: 17px;
+        text-align: center;
+
+    }
+    .sec2 h2 {
+        padding-top: 15px;
+        text-transform: uppercase;
+        font-weight: bolder; color: whitesmoke;
+        text-shadow: 3px 3px 2px black;
+    }
+    
+    .sec2 p {
+        font-weight: bolder; color: rgb(224, 221, 216);
+        text-shadow: 2px 2px 2px black;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
     }
 
     .somos {
-        width: 27%;
+        width: 30%;
         display: block;
         align-items: center;
         color: rgb(255, 255, 255);
         font-family: 'Poiret One', cursive;
-        text-transform: uppercase;
         font-size: 13px;
         text-align: center;
         background-color: #00000077;
@@ -302,8 +442,147 @@ footer p {
         font-size: 15px;
     }
 
+    main .fondoserv {
+        max-height: max-content;
+    }
 
+    .servicios {
+        display: inline-block;
+        padding: 5px;
+    }
 
+    .serv1 span {
+        display: inline-flex;
+        font-size: 30px;
+        color: rgb(26, 77, 97);
+        text-shadow: 0 0 17px rgb(255, 255, 255);
+    }
+    
+    h3 {
+        margin-top: -15px;
+        float: right;
+        font-size: 14px;
+        font-family: 'Poiret One', cursive;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    
+    .serv1 span {
+        float: left;
+        font-size: 30px;
+        color: rgb(26, 77, 97);
+        text-shadow: 0 0 17px rgb(255, 255, 255);
+    }
+    
+    .serv1{
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.815);
+        color: aliceblue;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .serv2 span {
+        float: left;
+        font-size: 30px;
+        color: rgb(26, 77, 97);
+        text-shadow: 0 0 17px rgb(255, 255, 255);
+    }
+    
+    .serv2{
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.815);
+        color: aliceblue;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .serv3 span {
+        float: left;
+        font-size: 30px;
+        font-size: 40px;
+        color: rgb(45, 128, 161);
+        text-shadow: 0 0 17px rgb(255, 255, 255);
+    }
+    
+    .serv3{
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.815);
+        color: aliceblue;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    h5 {
+        display: block;
+        align-items: center;
+        font-family: 'Poiret One', cursive;
+        text-shadow: 2px 2px 2px gray;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    .preg {
+
+        font-family: 'Poiret One', cursive;
+        text-align: justify;
+        text-transform: uppercase; 
+        font-size: 40px; 
+        display: block;
+    }
+
+    h4 {
+        font-family: 'Poiret One', cursive;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px rgba(3, 36, 34, 0.897); 
+        padding-top: 15px;
+        
+    }
+    
+    fieldset {
+        display: block;
+        background-color: rgba(2, 26, 36, 0.801);
+        padding-left: 15px;
+        padding-right: 15px;
+        border-style:none;
+        align-content: flex-start;
+    
+    }
+    
+    legend {
+        font-size: 25px;
+        font-weight: bold; color: hsl(175, 29%, 85%);
+        text-shadow: 2px 2px 2px black;
+        text-transform: uppercase;
+        
+    }
+    
+    form {
+        font-family: 'Poiret One', cursive;
+        margin-left: 10%;
+        position: absolute;
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        font-size: 20px; 
+        font-weight: bolder;color:rgb(57, 156, 255);
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .ubicanos{
+        display: none;
+    }
+    
+    .mapa img{
+        display: none;
+    }
 
     footer{
         width: 100%;
@@ -318,8 +597,6 @@ footer p {
         font-size: 20px;
         color: skyblue;
         padding-top: 35px;
-      
-        
     }
     
     .redes a:hover {
