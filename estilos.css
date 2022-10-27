@@ -12,25 +12,32 @@ body{
 
 header {
     width: 100%;    
+    
 }
 
 header nav{
     width: 100%;
-    max-width: 100%;
-    margin:0;
-    background-color: #003b37;
+    height: 80px;
+    background-color: rgb(0, 59, 55);
     display: flex;
+    justify-content: space-between;
 }
 
 .menu{
     display: none;
 }
 
-header nav .logo img {
-    width: 17%;
-    display:flex;
-    padding: 10px;
-    margin-left: 10px;
+.logo h1 {
+    padding: 20px;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 header nav ul {
@@ -51,12 +58,11 @@ header nav ul li a {
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 120%;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 header nav ul li span {
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 header nav ul li a:hover {
@@ -64,13 +70,171 @@ header nav ul li a:hover {
     text-decoration: overline;
 }
 
+main {
+    height: 100vh ;
+    background-image: url(./img/montevideo-3603950.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.somos {
+    width: 20%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+    padding: 2%;
+    background-color: #00000077;
+    text-align: center;
+    margin-left: 37%;
+    
+}
+
+.somos a {
+    color: aliceblue;
+    background-color: rgba(21, 102, 134, 0.815);
+    padding: 4%;
+    padding-top: 2%;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.servicios{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px;
+    grid-gap: 80px 50px;
+    padding-top: 50px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    
+}
+
+.serv1 span {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(26, 77, 97);
+    text-shadow: 0 0 17px rgb(255, 255, 255);
+}
+
+.serv1{
+    padding: 13px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: aliceblue;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.serv2 span {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(28, 85, 107);
+    text-shadow: 0 0 17px rgb(255, 255, 255);
+}
+
+.serv2{
+    padding: 13px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: aliceblue;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.serv3 span {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(45, 128, 161);
+    text-shadow: 0 0 17px rgb(255, 255, 255);
+}
+
+.serv3{
+    padding: 13px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: aliceblue;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer { 
+    height: 80px;
+    font-family: 'Poiret One', cursive;
+    background-color: rgb(0, 59, 55);
+    text-align:left;
+    font-size: 20px;
+    border-spacing: 3px;
+    color: antiquewhite;
+}
+
+footer p {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.redes{
+    font-size: 30px;
+    letter-spacing: 40px;
+    padding-top: 5px;
+    float: right;   
+}
+
+.redes a{
+    color: skyblue;
+    float: left;
+    align-items: center;
+    position:relative;
+    bottom: 30px;
+}
+
+.redes a:hover {
+    color: aliceblue;
+}
+
 @media screen and (max-width:800px) {
     header nav {
         width: 70%;
         height: 100%;
+        left: -100%;
         margin: 0;
         position: fixed;
-
     }
 
     header nav ul li {
@@ -82,23 +246,25 @@ header nav ul li a:hover {
     .menu {
         display: block;
         width: 100%;
-        background-color: #003b37;
+        background-color: rgb(0, 59, 55);
     }
 
-    header nav .logo img {
+    header nav .logo{
         display: none;
     }
 
     .menu .botmenu {
         display: block;
-        padding: 20px;
-        color: aliceblue;
+        padding: 10px;
+        font-size: 20px;
+        padding: 22px;
         text-decoration: none;
         font-family: 'Poiret One', cursive;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 150%;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
+        color: aliceblue;
+        font-weight: 600;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -106,49 +272,57 @@ header nav ul li a:hover {
 
     .menu span {
         float: right;
-        font-size: 30px;
+        font-size: 15px;
+    }
 
+    .somos {
+        width: 27%;
+        display: block;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Poiret One', cursive;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-align: center;
+        background-color: #00000077;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 11px;
+    }
+
+    .somos a {
+        display: block;
+        align-items: center;
+        color: aliceblue;
+        background-color: rgba(21, 102, 134, 0.815);
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
     }
 
 
 
-}footer{ 
-    min-height: 0;
-    font-family: 'Poiret One', cursive;
-    background-color: rgb(0, 59, 55);
-    text-align:left;
-    font-size: 20px;
-    padding: 7px;
-    border-spacing: 3px;
-    color: antiquewhite;
-    bottom: 0;
-}
 
-footer p {
-    padding-bottom: 0px;
-    padding-top: 10px;
-}
+    footer{
+        width: 100%;
+        height: 100px;
+    }
 
-.redes{
-    font-size: 30px;
-    letter-spacing: 40px;
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    footer p {
+        text-align: center;
+    }
+
+    .redes a {
+        font-size: 20px;
+        color: skyblue;
+        padding-top: 35px;
+      
+        
+    }
     
-}
-
-.redes a{
-    color: skyblue;
-    float: left;
-    align-items: center;
-    position:relative;
-    bottom: 30px;
-    
-}
-
-.redes a:hover {
-    color: aliceblue;
+    .redes a:hover {
+        color: aliceblue;
+    }
 }
